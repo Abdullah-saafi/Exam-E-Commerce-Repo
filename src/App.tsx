@@ -12,7 +12,6 @@ function App() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Navbar />
 
-      {/* main content grows to push footer to bottom */}
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
