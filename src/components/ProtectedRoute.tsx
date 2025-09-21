@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 
 interface ProtectedRouteProps {
   children: ReactElement;
