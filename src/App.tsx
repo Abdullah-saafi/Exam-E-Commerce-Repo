@@ -11,7 +11,7 @@ function App() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route
