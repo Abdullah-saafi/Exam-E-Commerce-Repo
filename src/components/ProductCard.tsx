@@ -9,19 +9,17 @@ interface ProductProps {
 
 const ProductCard = ({ id, title, price, thumbnail }: ProductProps) => {
   return (
-    <div className="border rounded-lg shadow p-4 bg-white">
+    <div className="border overflow-hidden rounded-lg bg-white shadow">
       <Link to={`/product/${id}`}>
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full h-40 object-cover rounded"
-        />
-        <h2 className="mt-2 font-semibold">{title}</h2>
+        <img src={thumbnail} alt={title} className="h-48 w-full object-cover" />
+        <div className="p-4">
+          <h3 className="mb-2 text-lg font-semibold text-gray-800">{title}</h3>
+          <p className="mb-4 text-gray-600">${price}</p>
+          <button className="w-full rounded bg-yellow-500 px-4 py-2 text-white hover:bg-blue-600">
+            Buy Now
+          </button>
+        </div>
       </Link>
-      <p className="text-gray-600">${price}</p>
-      <button className="mt-2 bg-yellow-600 text-white px-4 py-1 rounded">
-        Buy Now
-      </button>
     </div>
   );
 };

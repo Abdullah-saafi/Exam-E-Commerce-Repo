@@ -64,6 +64,7 @@ const Home = () => {
           Next
         </button>
       </div>
+      
     </div>
   );
 };

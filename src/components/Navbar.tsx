@@ -14,6 +14,11 @@ const Navbar = () => {
       <Link to="/home" className="font-bold text-xl">
         Jumma Bazar
       </Link>
+      <ol className="flex px-3">
+        <li>Doc</li>
+        <li className="px-4">Example</li>
+        <li>Blogs</li>
+      </ol>
       <div className="space-x-4">
         {!loggedIn && (
           <>
@@ -22,7 +27,7 @@ const Navbar = () => {
           </>
         )}
         {loggedIn && (
-          <button onClick={handleLogout} className="bg-red-500 px-3 py-1 rounded">
+          <button onClick={handleLogout} className="bg--500 px-3 py-1 rounded">
             Logout
           </button>
         )}
